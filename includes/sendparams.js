@@ -4,7 +4,7 @@ var putMethod = document.getElementById('putMethod');
 
 // POST:
 postMethod.addEventListener("click", function(){
-		$.post("http://shenkar.html5-book.co.il/2018-2019/dcs/dev_43/service_calculator/dcs_43.php/",
+		$.post("http://shenkar.html5-book.co.il/2018-2019/dcs/dev_43/service_calculator/dcs_43.php",
 		{func:"sum",num1:10,num2:15,num3:2},
 		function( data ) {
 
@@ -27,7 +27,7 @@ getMethod.addEventListener("click", function(){
 putMethod.addEventListener("click", function(){
 		var dataObj = {'func':'sum','num1':1,'num2':23,'num3':10};
 		$.ajax({
-			url:'http://shenkar.html5-book.co.il/2018-2019/dcs/dev_43/service_calculator/dcs_43.php/',
+			url:'http://shenkar.html5-book.co.il/2018-2019/dcs/dev_43/service_calculator/dcs_43.php',
 			data:dataObj,
 			dataType: 'json',
 			type:'PUT',
